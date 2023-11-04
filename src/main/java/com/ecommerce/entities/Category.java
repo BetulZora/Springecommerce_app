@@ -14,7 +14,7 @@ public class Category extends BaseEntity{
 
     private String name;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "categoryList")
     private List<Product> productList;
     //The potential size of the list is thousands
     // Comparented to List<Category> it is by degrees much more large

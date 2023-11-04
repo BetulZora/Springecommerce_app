@@ -21,8 +21,9 @@ public class Cart extends BaseEntity{
     @ManyToOne
     private Discount discount;
 
-
     @Enumerated(EnumType.STRING)
     private CartState cartState;
+
+
 
 }
